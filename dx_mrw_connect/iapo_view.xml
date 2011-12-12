@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <!-- IAPO -->
+        <record id="view_mrw_iapo_form" model="ir.ui.view">
+            <field name="name">mrw.iapo.form</field>
+            <field name="model">mrw.iapo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="IAPO">
+                    <group colspan="4" col="4">
+                        <field name="name" select="1"/>
+                        <field name="created"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Messages">
+                                <field colspan="4" name="messages" readonly = "1" nolabel="1" >
+                                <tree>
+                                	<field name="created"/>
+                                	<field name="name"/>
+                                </tree>
+                                <form>
+				                        <field name="created" colspan="4"/>
+				                        <newline/>
+				                        <field name="name" colspan="4"/>
+								</form>
+								</field>
+                        </page>
+                        <page string="Lines">
+                                <field colspan="4" name="lines" readonly = "1" nolabel="1" >
+                                <tree>
+                                	<field name="demanda"/>
+                                	<field name="cliente"/>
+                                	<field name="fecha_s"/>
+                                	<field name="fecha_d"/>
+                                	<field name="od"/>
+                                	<field name="num_l"/>
+                                	<field name="articulo_id"/>
+                                	<field name="cantidad_d"/>
+                                	<field name="cantidad_original"/>
+                                </tree>
+                                </field>
+                        </page>        
+                        <page string="Notes">
+                            <field colspan="4" name="description" nolabel="1"/>
+                        </page>
+                    </notebook>
+                    <newline/>        
+		            <group colspan="4" col="12">
+		                <field name="state"/>
+		                <button name="iapo_set_checking" string="Process" states="draft" icon="gtk-go-forward"/>    
+		                <button name="iapo_set_cancel" string="Cancel" states="draft,error"  icon="gtk-cancel"/>
+		                <button name="iapo_set_draft" string="Draft" states="cancel,error" icon="gtk-jump-to"/>
+		            </group>
+                </form>
+            </field>
+        </record>
+
+
+       <record id="view_mrw_iapo_filter" model="ir.ui.view">
+            <field name="name">mrw.iapo.select</field>
+            <field name="model">mrw.iapo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search IAPO">
+                   <group col='15' colspan='4'>
+                       <filter icon="terp-check" string="Draft" name="Draft" domain="[('state', '=','draft')]" help="Draft IAPO"/>
+                       <separator orientation="vertical"/>
+                       <filter icon="terp-check" string="Processed" name="Processed" domain="[('state', '=','processed')]" help="Processed IAPO"/>
+                       <separator orientation="vertical"/>
+                       <filter icon="terp-check" string="Error" name="Error" domain="[('state', '=','error')]" help="Error IAPO"/>
+                       <separator orientation="vertical"/>
+                       <filter icon="terp-check" string="Cancel" name="Cancel" domain="[('state', '=','cancel')]" help="Cancel IAPO"/>
+                       <separator orientation="vertical"/>
+                       <field name="user_id" string="Created by"/>
+                       <field name="created" string="Created date"/>
+                       <field name="name"/>
+                   </group>
+                   <newline />
+                    <group expand="0" string="Group By..." colspan="4" col="20" groups="base.group_extended">
+                        <filter string="State" name="state"  icon="terp-check" domain = "[]" context="{'group_by':'state'}"/>
+                         <separator orientation="vertical"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+
+        <record id="view_mrw_iapo_tree" model="ir.ui.view">
+            <field name="name">mrw.iapo.tree</field>
+            <field name="model">mrw.iapo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="green:state in ('processed');red:state in ('error');blue:state in ('draft');grey: state in ('cancel')" string="Campaigns">
+                    <field name="name"/>
+                    <field name="created"/>
+                    <field name="user_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        
+        
+
+        <record id="open_view_mrw_iapo" model="ir.actions.act_window">
+            <field name="name">IAPO Processing</field>
+            <field name="res_model">mrw.iapo</field>
+            <field name="view_type">form</field>
+            <field name="domain">[]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_mrw_iapo_tree"/>
+            <field name="search_view_id" ref="view_mrw_iapo_filter"/>
+        </record>
+        
+        <menuitem name="MRW Connect" id="menu_open_mrw_iapo" parent="menu_main_mrw" sequence="10"/>
+       
+        <menuitem action="open_view_mrw_iapo" id="menu_open_view_mrw_iapo" parent="menu_open_mrw_iapo" sequence="10"/>
+       
+        
+    </data>
+</openerp>

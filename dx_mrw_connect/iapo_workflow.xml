@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="workflow" id="wkf_iapo">
+            <field name="name">iapo.wkf</field>
+            <field name="osv">mrw.iapo</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="workflow.activity" id="act_draft">
+            <field name="wkf_id" ref="wkf_iapo" />
+            <field name="flow_start">True</field>
+            <field name="name">draft</field>
+            <field name="kind">function</field>
+            <field name="action">iapo_draft()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_checking">
+            <field name="wkf_id" ref="wkf_iapo" />
+            <field name="name">checking</field>
+            <field name="kind">function</field>
+            <field name="action">iapo_checking()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_processed">
+            <field name="wkf_id" ref="wkf_iapo" />
+            <field name="name">processed</field>
+            <field name="kind">function</field>
+            <field name="action">iapo_processed()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_error">
+            <field name="wkf_id" ref="wkf_iapo" />
+            <field name="name">error</field>
+            <field name="kind">function</field>
+            <field name="action">iapo_error()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_cancel">
+            <field name="wkf_id" ref="wkf_iapo" />
+            <field name="name">cancel</field>
+            <field name="kind">function</field>
+            <field name="action">iapo_cancel()</field>
+        </record>
+
+        <record model="workflow.transition" id="t1">
+            <field name="act_from" ref="act_draft" />
+            <field name="act_to" ref="act_checking" />
+            <field name="signal">iapo_set_checking</field>
+        </record>
+
+        <record model="workflow.transition" id="t2">
+            <field name="act_from" ref="act_draft" />
+            <field name="act_to" ref="act_cancel" />
+            <field name="signal">iapo_set_cancel</field>
+        </record>
+        
+        <record model="workflow.transition" id="t3">
+            <field name="act_from" ref="act_checking" />
+            <field name="act_to" ref="act_error" />
+            <field name="signal">iapo_set_error</field>
+        </record>
+        
+        <record model="workflow.transition" id="t4">
+            <field name="act_from" ref="act_error" />
+            <field name="act_to" ref="act_cancel" />
+            <field name="signal">iapo_set_cancel</field>
+        </record>
+
+        <record model="workflow.transition" id="t5">
+            <field name="act_from" ref="act_cancel" />
+            <field name="act_to" ref="act_draft" />
+            <field name="signal">iapo_set_draft</field>
+        </record>
+        
+        <record model="workflow.transition" id="t6">
+            <field name="act_from" ref="act_error" />
+            <field name="act_to" ref="act_draft" />
+            <field name="signal">iapo_set_draft</field>
+        </record>
+        
+        <record model="workflow.transition" id="t7">
+            <field name="act_from" ref="act_checking" />
+            <field name="act_to" ref="act_processed" />
+            <field name="signal">iapo_set_processed</field>
+        </record>
+        
+    </data>
+</openerp>

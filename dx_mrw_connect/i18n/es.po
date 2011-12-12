@@ -1,0 +1,628 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dx_mrw_connect
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-11-25 08:09+0000\n"
+"PO-Revision-Date: 2011-11-25 09:30+0100\n"
+"Last-Translator: Angel Moya <angel.moya@domatix.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,poblacion2:0
+#: field:mrw.iapo.line,poblacion2:0
+msgid "Poblacion de facturacion de origen o destino"
+msgstr "Población de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: help:mrw.iapo,state:0
+msgid ""
+"When the MRW IAPO Processing is created the state is 'Draft'.\n"
+" It is processed by the user, the state is 'Processed'.\n"
+" If an error ocurs, the state is 'Error'.\n"
+" User can cancel it, the state is 'Cancel'."
+msgstr ""
+"Cuando se crea un Procesamiento de IAPO el estado es 'Borrador'.\n"
+" Si se procesa, el estado es 'Procesado'.\n"
+"Si sucede un error, el estado es 'Error'.\n"
+"Si se cancela, el estado es 'Cancelado'."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,estado_ds:0
+msgid "Estado de disponibilidad del articulo"
+msgstr "Estado de disponibilidad del artículo"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,fecha_d:0
+#: field:mrw.iapo.line,fecha_d:0
+msgid "Fecha Documento"
+msgstr "Fecha Documento"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_mrw_iapi_line
+msgid "MRW IAPI line object"
+msgstr "MRW IAPI line object"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi,campaign_code:0
+#: field:mrw.iapi,name:0
+#: field:mrw.iapi,partner_code:0
+#: field:mrw.iapi.line,name:0
+#: field:mrw.iapo,name:0
+#: field:mrw.iapo.line,name:0
+#: field:mrw.iapo.message,name:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,tipo_dem:0
+#: field:mrw.iapo.line,tipo_dem:0
+msgid "Tipo Demanda"
+msgstr "Tipo Demanda"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,fecha_c:0
+#: field:mrw.iapo.line,fecha_c:0
+msgid "Fecha de caducidad"
+msgstr "Fecha de caducidad"
+
+#. module: dx_mrw_connect
+#: sql_constraint:purchase.order:0
+msgid "Order Reference must be unique !"
+msgstr "¡La referencia del pedido debe ser única!"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,od:0
+#: field:mrw.iapo.line,od:0
+msgid "Codigo origen, destino, proveedor..."
+msgstr "Código origen, destino, proveedor..."
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_mrw_iapo_message
+msgid "MRW IAPO message"
+msgstr "Mensaje de IAPO"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,iapo_processed:0
+msgid "IAPO last processed"
+msgstr "IAPO último procesamiento"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: field:mrw.iapo,user_id:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_mrw_iapi
+msgid "MRW IAPI object"
+msgstr "MRW IAPI object"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,prioridad:0
+#: field:mrw.iapo.line,prioridad:0
+msgid "Prioridad"
+msgstr "Prioridad"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: dx_mrw_connect
+#: model:ir.ui.menu,name:dx_mrw_connect.menu_main_mrw
+#: view:purchase.order:0
+#: view:sale.shop:0
+msgid "MRW"
+msgstr "MRW"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: field:mrw.iapo,messages:0
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,tratamiento:0
+#: field:mrw.iapi.line,tratamiento_l:0
+#: field:mrw.iapo.line,tratamiento:0
+#: field:mrw.iapo.line,tratamiento_l:0
+msgid "Tipo de tratamiento"
+msgstr "Tipo de tratamiento"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,p_carga:0
+#: field:mrw.iapo.line,p_carga:0
+msgid "Codigo proveedor"
+msgstr "Código proveedor"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,contenedor:0
+#: field:mrw.iapo.line,contenedor:0
+msgid "Numero o matricula del contenedor"
+msgstr "Número o matricula del contenedor"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi,shop_id:0
+#: field:mrw.iapo,shop_id:0
+#: field:purchase.order,shop_id:0
+msgid "Shop"
+msgstr "Tienda"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,tipo_reg:0
+#: field:mrw.iapo.line,tipo_reg:0
+msgid "Tipo Registro"
+msgstr "Tipo Registro"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,num_l:0
+#: field:mrw.iapo.line,num_l:0
+msgid "Numero de linea del cliente"
+msgstr "Número de linea del cliente"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_mrw_iapo
+msgid "MRW IAPO Processing"
+msgstr "Procesamieto de IAPO"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: field:mrw.iapo,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: dx_mrw_connect
+#: model:ir.module.module,shortdesc:dx_mrw_connect.module_meta_information
+msgid "MRW Connect"
+msgstr "MRW Connect"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Search IAPO"
+msgstr "Buscar IAPO"
+
+#. module: dx_mrw_connect
+#: selection:mrw.iapo,state:0
+msgid "Checking"
+msgstr "Comprobar"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,direccion2:0
+#: field:mrw.iapo.line,direccion2:0
+msgid "Direccion de facturacion de origen o destino"
+msgstr "Dirección de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Campaigns"
+msgstr "Campaña"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,lote:0
+#: field:mrw.iapo.line,lote:0
+msgid "Lote"
+msgstr "Lote"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,gama:0
+#: field:mrw.iapo.line,gama:0
+msgid "Gama"
+msgstr "Gama"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,movil:0
+#: field:mrw.iapo.line,movil:0
+msgid "Movil de origen o destino"
+msgstr "Móvil de origen o destino"
+
+#. module: dx_mrw_connect
+#: constraint:mrw.iapi:0
+msgid "You can not create IAPI from purchase with shop without IAPI path."
+msgstr "No se puede crear un IAPI en una tienda sin Directorio de IAPI."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,volumen:0
+#: field:mrw.iapo.line,volumen:0
+msgid "Volumen"
+msgstr "Volumen"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,peso:0
+#: field:mrw.iapo.line,peso:0
+msgid "Peso"
+msgstr "Peso"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "IAPO"
+msgstr "IAPO"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,pais:0
+#: field:mrw.iapo.line,pais:0
+msgid "Pais de origen o destino"
+msgstr "País de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,iapi_id:0
+#: field:purchase.order,iapi_id:0
+msgid "IAPI"
+msgstr "IAPI"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_mrw_iapo_line
+msgid "MRW IAPO line object"
+msgstr "MRW IAPO line object"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,ean:0
+#: field:mrw.iapo.line,ean:0
+msgid "Codigo EAN13 de origen o destino"
+msgstr "Código EAN13 de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo,created:0
+msgid "Date created"
+msgstr "Fecha de creación"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,depto:0
+#: field:mrw.iapo.line,depto:0
+msgid "Departamento del cliente"
+msgstr "Departamento del cliente"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,nombre2:0
+#: field:mrw.iapo.line,nombre2:0
+msgid "Nombre de facturacion de origen o destino"
+msgstr "Nombre de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,direccion:0
+#: field:mrw.iapo.line,direccion:0
+msgid "Direccion de origen o destino"
+msgstr "Dirección de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,dispositivo:0
+#: field:mrw.iapo.line,dispositivo:0
+msgid "Dispositivo organizativo"
+msgstr "Dispositivo organizativo"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,nif:0
+#: field:mrw.iapo.line,nif:0
+msgid "NIF de origen o destino"
+msgstr "NIF de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,nif2:0
+#: field:mrw.iapo.line,nif2:0
+msgid "NIF de facturacion de origen o destino"
+msgstr "NIF de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.message,date:0
+msgid "Date Created"
+msgstr "Fecha de creación"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,p_servicio:0
+#: field:mrw.iapo.line,p_servicio:0
+msgid "Codigo origen en entrega"
+msgstr "Código origen en entrega"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,iapo_auto:0
+msgid "IAPO auto process"
+msgstr "Auto procesado de IAPO"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,iapo_path:0
+msgid "IAPO Path"
+msgstr "Directorio de IAPO"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: selection:mrw.iapo,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Created date"
+msgstr "Fecha de creación"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,iapo_id:0
+#: field:mrw.iapo.message,iapo_id:0
+msgid "MRW IAPO"
+msgstr "MRW IAPO"
+
+#. module: dx_mrw_connect
+#: field:product.product,mrw_code:0
+msgid "MRW Code"
+msgstr "MRW Código"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,articulo_id:0
+#: field:mrw.iapo.line,articulo_id:0
+msgid "Codigo del articulo"
+msgstr "Código del artículo"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,transportista:0
+#: field:mrw.iapo.line,transportista:0
+msgid "Codigo de transportista"
+msgstr "Código de transportista"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,demanda:0
+#: field:mrw.iapo.line,demanda:0
+msgid "Demanda"
+msgstr "Demanda"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_sale_shop
+msgid "Sales Shop"
+msgstr "Tienda ventas"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,blancos:0
+#: field:mrw.iapo.line,blancos:0
+msgid "Blancos"
+msgstr "Blancos"
+
+#. module: dx_mrw_connect
+#: constraint:mrw.iapi:0
+msgid "You can not create IAPI from purchase with shop without campaign code."
+msgstr "No se puede crear un IAPI desde un pedido de compra con una tienda sin código de campaña."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,cliente:0
+#: field:mrw.iapo.line,cliente:0
+msgid "Codigo Cliente"
+msgstr "Código Cliente"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,cantidad_d:0
+#: field:mrw.iapo.line,cantidad_d:0
+msgid "Cantidad del articulo"
+msgstr "Cantidad del artículo"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: selection:mrw.iapo,state:0
+msgid "Processed"
+msgstr "Procesado"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: selection:mrw.iapo,state:0
+msgid "Error"
+msgstr "Error"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+msgid "Process"
+msgstr "Procesar"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,cod_postal2:0
+#: field:mrw.iapo.line,cod_postal2:0
+msgid "Codigo postal de facturacion de origen o destino"
+msgstr "Código postal de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,nombre:0
+#: field:mrw.iapo.line,nombre:0
+msgid "Nombre de origen o destino"
+msgstr "Nombre de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi,file:0
+msgid "Archivo"
+msgstr "Archivo"
+
+#. module: dx_mrw_connect
+#: view:mrw.iapo:0
+#: selection:mrw.iapo,state:0
+msgid "Cancel"
+msgstr "Cancelado"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,mrw_partner_code:0
+msgid "MRW Partner Code"
+msgstr "MRW Código de empresa"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,telefono:0
+#: field:mrw.iapo.line,telefono:0
+msgid "Telefono de origen o destino"
+msgstr "Teléfono de origen o destino"
+
+#. module: dx_mrw_connect
+#: constraint:mrw.iapi:0
+msgid "You can not create IAPI from purchase without shop."
+msgstr "No se puede crear un IAPI desde un pedido de compra sin tienda."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,movil2:0
+msgid "Movil de facturacion de origen o destino"
+msgstr "Movil de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,mrw_campaign_code:0
+msgid "MRW Campaign Code"
+msgstr "MRW Código de campaña"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,poblacion:0
+#: field:mrw.iapo.line,poblacion:0
+msgid "Poblacion de origen o destino"
+msgstr "Población de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,albaran:0
+#: field:mrw.iapo.line,albaran:0
+msgid "Codigo Albaran"
+msgstr "Código Albarán"
+
+#. module: dx_mrw_connect
+#: model:ir.model,name:dx_mrw_connect.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,provincia2:0
+#: field:mrw.iapo.line,provincia2:0
+msgid "Provincia de facturacion de origen o destino"
+msgstr "Provincia de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,provincia:0
+#: field:mrw.iapo.line,provincia:0
+msgid "Provincia de origen o destino"
+msgstr "Provincia de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,observacion:0
+#: field:mrw.iapo.line,observacion:0
+msgid "Observaciones libres"
+msgstr "Observaciones libres"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,ean2:0
+#: field:mrw.iapo.line,ean2:0
+msgid "Codigo EAN13 de facturacion de origen o destino"
+msgstr "Código EAN13 de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: model:ir.module.module,description:dx_mrw_connect.module_meta_information
+msgid ""
+"\n"
+"        Generación e importación de ficheros de intercambio de MRW  \n"
+"    "
+msgstr ""
+"\n"
+"        Generación e importación de ficheros de intercambio de MRW  \n"
+"    "
+
+#. module: dx_mrw_connect
+#: constraint:mrw.iapi:0
+msgid "You can not create IAPI from purchase with shop without partner code."
+msgstr "No se puede generar un IAPI desde un pedido de compra con una tienda sin código de empresa de MRW."
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,od2:0
+#: field:mrw.iapo.line,od2:0
+msgid "Codigo de facturacion origen o destino"
+msgstr "Código de facturación origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,observacion_l:0
+msgid "Observaciones libres linea"
+msgstr "Observaciones libres linea"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi,lines:0
+#: view:mrw.iapo:0
+#: field:mrw.iapo,lines:0
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: dx_mrw_connect
+#: field:sale.shop,iapi_path:0
+msgid "IAPI Path"
+msgstr "Directorio de IAPI"
+
+#. module: dx_mrw_connect
+#: view:purchase.order:0
+msgid "Generate IAPI"
+msgstr "Generar IAPI"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,incidencia:0
+msgid "Codigo de la excepcion o incidencia"
+msgstr "Código de la excepción o incidencia"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,num_l_prov:0
+#: field:mrw.iapo.line,num_l_prov:0
+msgid "Numero de linea de la demanda del proveedor"
+msgstr "Número de línea de la demanda del proveedor"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,telefono2:0
+#: field:mrw.iapo.line,telefono2:0
+msgid "Telefono de facturacion de origen o destino"
+msgstr "Teléfono de facturacion de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,cod_postal:0
+#: field:mrw.iapo.line,cod_postal:0
+msgid "Codigo postal de origen o destino"
+msgstr "Código postal de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,estado_qc:0
+msgid "Estado de calidad del articulo"
+msgstr "Estado de calidad del artículo"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,fecha_s:0
+#: field:mrw.iapo.line,fecha_s:0
+msgid "Fecha recepcion"
+msgstr "Fecha recepción"
+
+#. module: dx_mrw_connect
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN no válido"
+
+#. module: dx_mrw_connect
+#: model:ir.actions.act_window,name:dx_mrw_connect.open_view_mrw_iapo
+#: model:ir.ui.menu,name:dx_mrw_connect.menu_open_view_mrw_iapo
+msgid "IAPO Processing"
+msgstr "Procesamiento de IAPO"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,pais2:0
+#: field:mrw.iapo.line,pais2:0
+msgid "Pais de facturacion de origen o destino"
+msgstr "País de facturación de origen o destino"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapo.line,cantidad_original:0
+msgid "Cantidad original recibida en IAPI"
+msgstr "Cantidad original recibida en IAPI"
+
+#. module: dx_mrw_connect
+#: field:mrw.iapi.line,bultos:0
+#: field:mrw.iapo.line,bultos:0
+msgid "Bultos"
+msgstr "Bultos"
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+            <record id="purchase_order_form_mrw" model="ir.ui.view">
+            <field name="name">purchase.order.form.mrw</field>
+            <field name="model">purchase.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                    <notebook position="inside">
+                        <page string="MRW">
+                        	<group>
+                        	<field name="shop_id"/>
+                        	</group>
+                        	<group>
+                            <button name="generate_iapi" string="Generate IAPI" type="object" icon="gtk-ok" states="approved"/>
+                            <field name="iapi_id"  attrs="{'invisible':[('state','!=','approved')]}"/>
+                            </group> 
+                        </page>
+                    </notebook>
+            </field>
+        </record>
+        
+	</data>
+</openerp>
